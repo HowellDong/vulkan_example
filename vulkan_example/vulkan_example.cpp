@@ -27,10 +27,8 @@ int main()
 
 	VkResult result = vkCreateInstance(&createInfo, nullptr, &instance);
 
-	glm::aligned_vec4 a(1.0f);
-	glm::aligned_mat4 b(1.0f);
-
-	a = b * a;
+	if (result != VK_SUCCESS)
+		std::cerr << "failed to create vk instance" << std::endl;
 
 	return 0;
 }
