@@ -15,6 +15,6 @@ find_package(glm CONFIG REQUIRED)
 find_package(Vulkan REQUIRED)
 
 # Include sub-projects.
-add_subdirectory ("vulkan_example")
+add_subdirectory ("create_instance")
 
-add_subdirectory("create_instance")
+add_subdirectory("create_win32_window")
